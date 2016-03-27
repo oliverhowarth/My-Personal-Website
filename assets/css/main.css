@@ -361,7 +361,7 @@ textarea {
   -webkit-appearance: none; }
 
 body {
-  background-color: white;
+  background-color: blue;
   font-size: 14px;
   line-height: 1.6;
   font-family: 'Fira Sans', sans-serif;
@@ -438,3 +438,12 @@ a {
   outline: 0; }
   a:hover, a:focus {
     color: #40a6ff; }
+
+body {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300; }
+
+header {
+  height: 700px;
+  background: white;
+  padding: 0 30; }
