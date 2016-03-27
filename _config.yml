@@ -1,0 +1,3 @@
+name: Oliver Howarth
+markdown: redcarpet
+exclude: ["node_modules", "gulpfile.js", "package.json"]
