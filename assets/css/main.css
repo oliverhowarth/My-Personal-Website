@@ -1,3 +1,11 @@
+.cf:after,
+.cf:before {
+  content: " ";
+  display: table; }
+
+.cf:after {
+  clear: both; }
+
 /*! normalize.css v4.0.0 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
@@ -443,7 +451,23 @@ body {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 300; }
 
-header {
-  height: 700px;
+.home-wrapper header {
+  position: fixed;
+  height: 120;
+  margin: 0 auto;
+  width: 70%;
   background: white;
   padding: 0 30; }
+  .home-wrapper header .logo {
+    font-color: #4A4A4A;
+    font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+    font-size: 32px; }
+    .home-wrapper header .logo span {
+      font-weight: 400; }
+  .home-wrapper header .site-nav nav li {
+    list-style: none;
+    float: left; }
+  .home-wrapper header .site-nav nav a {
+    color: #4A4A4A;
+    margin-left: 2rem; }

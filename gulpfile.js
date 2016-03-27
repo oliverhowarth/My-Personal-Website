@@ -40,7 +40,7 @@ gulp.task('browser-sync', ['sass', 'jekyll-build'], function() {
         server: {
             baseDir: '_site'
         },
-        notify: false
+        notify: true
     });
 });
 
@@ -79,12 +79,10 @@ gulp.task('jade', function(){
  * Watch html/md files, run jekyll & reload BrowserSync
  */
 gulp.task('watch', function () {
-    gulp.watch('assets/css/*.scss', ['sass']);
+    gulp.watch('assets/css/**', ['sass']);
     gulp.watch(['index.html', '_layouts/*.html', '_includes/*'], ['jekyll-rebuild']);
     gulp.watch('_jadefiles/*jade', ['jade']);
 });
-
-
 
 
 /**

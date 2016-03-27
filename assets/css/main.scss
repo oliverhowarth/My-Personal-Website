@@ -1,3 +1,17 @@
+// Clear Fix
+
+.cf:after,
+.cf:before {
+	content: " ";
+	display: table;
+}
+
+.cf:after {
+	clear: both;
+}
+
+// includes
+
 @import "tools/normalize";
 @import "tools/bourbon/bourbon";
 
